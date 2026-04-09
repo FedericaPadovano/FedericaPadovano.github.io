@@ -5,7 +5,7 @@ body {
 
 /* NAVBAR */
 nav {
-  padding: 42px;
+  padding: 24px;
   text-align: center;
 }
 
@@ -14,12 +14,17 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  font-size: 20px;
 }
 
 /* LAYOUT PRINCIPALE */
 .main {
   display: flex;
   min-height: 100vh;
+}
+
+h2 {
+  font-size: 32px; /* 
 }
 
 /* COLONNA SINISTRA (PICCOLA) */
