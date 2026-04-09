@@ -19,7 +19,7 @@ nav a {
 /* LAYOUT PRINCIPALE */
 .main {
   display: flex;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 /* COLONNA SINISTRA (PICCOLA) */
@@ -34,6 +34,8 @@ nav a {
 .right {
   width: 70%;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* FOTO TONDA */
@@ -52,12 +54,13 @@ nav a {
 
 /* IMMAGINE GRANDE */
 .cover {
+  margin-top: 20px;
   width: 100%;
-  height: 400px;
+  flex-grow: 1;          /* prende SOLO lo spazio rimanente */
+  max-height: 400px;     /* 🔥 limita che non diventi gigante */
   background-image: url('cover.jpg');
   background-size: cover;
   background-position: center;
-  margin-top: 40px;
 }
 
 .social {
