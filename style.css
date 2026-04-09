@@ -38,7 +38,7 @@ h2 {
 /* COLONNA DESTRA (GRANDE) */
 .right {
   width: 70%;
-  padding: 0px;
+  padding: 10px;
   /*display: flex;*/
   /*flex-direction: column;*/
 }
@@ -92,6 +92,7 @@ h2 {
 
 .web_page {
   width: 90%;
-  padding: 20px 10px;
+  padding: 40px 20px;
   background-color: #f5f5f5;
+  text-align: center;
 }
