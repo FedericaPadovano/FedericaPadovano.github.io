@@ -20,11 +20,11 @@ nav a {
 /* LAYOUT PRINCIPALE */
 .main {
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 h2 {
-  font-size: 32px; /* 
+  font-size: 36px; /* 
 }
 
 /* COLONNA SINISTRA (PICCOLA) */
@@ -61,7 +61,7 @@ h2 {
 .cover {
   margin-top: 20px;
   width: 100%;
-  height: 40vh; /* 🔥 40% altezza schermo */
+  height: 100px; /* 🔥 40% altezza schermo */
   background-image: url('cover.jpg');
   background-size: cover;
   background-position: center;
