@@ -56,8 +56,7 @@ nav a {
 .cover {
   margin-top: 20px;
   width: 100%;
-  flex-grow: 1;          /* prende SOLO lo spazio rimanente */
-  max-height: 300px;     /* 🔥 limita che non diventi gigante */
+  height: 40vh; /* 🔥 40% altezza schermo */
   background-image: url('cover.jpg');
   background-size: cover;
   background-position: center;
