@@ -62,6 +62,11 @@ nav a {
   background-position: center;
 }
 
+.email {
+  font-size: 14px;
+  word-break: break-all;
+}
+
 .social {
   margin-top: 15px;
   display: flex;
