@@ -5,7 +5,7 @@ body {
 
 /* NAVBAR */
 nav {
-  padding: 20px;
+  padding: 32px;
   text-align: center;
 }
 
@@ -57,7 +57,7 @@ nav a {
   margin-top: 20px;
   width: 100%;
   flex-grow: 1;          /* prende SOLO lo spazio rimanente */
-  max-height: 400px;     /* 🔥 limita che non diventi gigante */
+  max-height: 300px;     /* 🔥 limita che non diventi gigante */
   background-image: url('cover.jpg');
   background-size: cover;
   background-position: center;
@@ -72,7 +72,7 @@ nav a {
 
 .social a {
   color: #007acc;
-  font-size: 32px;   /* prova 32px o 36px */
+  font-size: 36px;   /* prova 32px o 36px */
   text-decoration: none;
 }
 
