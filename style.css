@@ -61,9 +61,10 @@ h2 {
 .cover {
   margin-top: 20px;
   width: 100%;
-  height: 100px; /* 🔥 40% altezza schermo */
+  height: 50px; /* smaller height */
   background-image: url('cover.jpg');
-  background-size: cover;
+  background-size: contain; /* keeps image smaller without cropping */
+  background-repeat: no-repeat; /* prevents tiling */
   background-position: center;
 }
 
