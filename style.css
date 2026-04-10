@@ -124,8 +124,9 @@ ul {
     margin: 10px 0;
   }
 
-  .cover {
-    height: 150px; /* smaller image */
+  .profile {
+    width: 80px;
+    height: 80px;
   }
 
   h1 {
