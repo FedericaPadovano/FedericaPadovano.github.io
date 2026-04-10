@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   margin: 0;
 }
 
@@ -26,6 +26,7 @@ nav a {
 
 h2 {
   font-size: 36px; 
+  font-family: "Georgia", serif;
 }
 
 /* COLONNA SINISTRA (PICCOLA) */
