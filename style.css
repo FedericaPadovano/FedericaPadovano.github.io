@@ -35,8 +35,12 @@ h2 {
   font-family: "Georgia", serif;
 }
 
-h3 {
+h3 { 
   font-family: "Georgia", serif;
+}
+
+h5 {
+  font-size: 16px;
 }
 
 /* COLONNA SINISTRA (PICCOLA) */
@@ -134,11 +138,11 @@ ul {
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h5 {
