@@ -24,8 +24,16 @@ nav a {
   min-height: 90vh;
 }
 
+h1 {
+  font-family: "Georgia", serif;
+}
+
 h2 {
   font-size: 36px; 
+  font-family: "Georgia", serif;
+}
+
+h3 {
   font-family: "Georgia", serif;
 }
 
