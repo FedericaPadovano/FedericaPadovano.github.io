@@ -22,7 +22,7 @@ nav a {
 .main {
   display: flex;
   min-height: 90vh;
-  font-size: 12px; 
+  font-size: 14px; 
   flex-wrap: wrap;
 }
 
@@ -110,6 +110,7 @@ ul {
 
   .main {
     flex-direction: column; /* stack instead of side-by-side */
+    font-size: 10px; 
   }
 
   .left,
