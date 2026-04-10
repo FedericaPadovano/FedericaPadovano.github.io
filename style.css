@@ -112,6 +112,6 @@ ul {
   padding-left: 20px;    /* adds space so bullets are visible */
 }
 
-small_size {
+.small_size {
   font-size: 15px; 
 }
