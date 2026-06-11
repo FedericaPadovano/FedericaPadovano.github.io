@@ -149,4 +149,13 @@ ul {
   h5 {
     font-size: 12px;
   }
+
+  .icon-document {
+  transition: all 0.0s ease;
+  }
+  
+  .icon-document:hover {
+    color: #FF7518;          /* pumpkin orange */
+    font-weight: bold;       /* thicker look if font supports it */
+  }
 }
