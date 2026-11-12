@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO: title and description shown in Google results -->
-  <title>Federica Padovano – PhD in Applied Mathematics, LJLL Sorbonne Université</title>
-  <meta name="description" content="Federica Padovano, PhD in Applied Mathematics at Laboratoire Jacques-Louis Lions (Sorbonne Université), working on mathematical models of cancer population dynamics, chemotherapy, immunotherapy and immune interactions.">
+  <title>Federica Padovano – Applied Mathematics, LJLL Sorbonne Université</title>
+  <meta name="description" content="Federica Padovano, PhD in Applied Mathematics at Laboratoire Jacques-Louis Lions (Sorbonne Université, Paris), working on mathematical models of cancer population dynamics, chemotherapy, immunotherapy and immune interactions.">
   <meta name="author" content="Federica Padovano">
+  <meta name="robots" content="noimageindex">
   <link rel="canonical" href="https://federicapadovano.github.io/">
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- Google Search Console verification: paste the tag Google gives you here, e.g.
   <meta name="google-site-verification" content="XXXXXXXXXXXXXXXX">
@@ -16,7 +18,7 @@
 
   <!-- Preview when the link is shared (LinkedIn, WhatsApp, etc.) -->
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Federica Padovano – PhD in Applied Mathematics">
+  <meta property="og:title" content="Federica Padovano – Applied Mathematics">
   <meta property="og:description" content="PhD at LJLL, Sorbonne Université, working on mathematical models of cancer population dynamics.">
   <meta property="og:url" content="https://federicapadovano.github.io/">
 
@@ -26,13 +28,12 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Federica Padovano",
-    "jobTitle": "PhD in Applied Mathematics",
+    "jobTitle": "PhD researcher in Applied Mathematics",
     "affiliation": {
-      "@type": "Organisation",
+      "@type": "Organization",
       "name": "Laboratoire Jacques-Louis Lions, Sorbonne Université",
       "url": "https://www.ljll.fr/"
     },
-    "email": "mailto:federica.padovano [at] sorbonne-universite.fr",
     "url": "https://federicapadovano.github.io/",
     "knowsAbout": ["Mathematical Biology", "Cancer modelling", "Population dynamics", "Immunotherapy", "Chemotherapy"],
     "sameAs": [
@@ -42,69 +43,64 @@
   }
   </script>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Your CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="FP_CV.pdf" target="_blank" rel="noopener">CV</a>
+  <a href="./" aria-current="page">Home</a>
+  <a href="FP_CV.pdf">CV</a>
   <a href="research.html">Research</a>
   <a href="talks.html">Talks &amp; Teaching</a>
 </nav>
 
 <div class="main">
 
-  <!-- COLONNA SINISTRA -->
-  <div class="left">
-    <img src="link_picture.png" alt="Federica Padovano" class="profile">
+  <aside class="left">
+    <img draggable="false" src="profile.jpg" alt="Federica Padovano" class="profile" width="120" height="120">
     <h1>Federica Padovano</h1>
-
     <p class="subtitle">PhD in Applied Mathematics</p>
-    <p class="subtitle">Laboratoire Jacques-Louis Lions,<br> Sorbonne Université</p>
-    <p class="subtitle">4 Pl. Jussieu, 75005, Paris, France</p>
-
-    <p class="email">
-      <a href="mailto:federica.padovano [at] sorbonne-universite.fr">
-        federica.padovano [at] sorbonne-universite.fr
-      </a>
-    </p>
-
+    <p class="subtitle">Laboratoire Jacques-Louis Lions,<br>Sorbonne Université</p>
+    <p class="subtitle">4 Pl. Jussieu, 75005 Paris, France</p>
+    <p class="email"><a class="mail" href="#" data-user="federica.padovano" data-domain="sorbonne-universite.fr">federica.padovano [at] sorbonne-universite.fr</a></p>
     <div class="social">
-      <a href="https://www.linkedin.com/in/federica-padovano-a2215222a/" target="_blank" rel="noopener" aria-label="Federica Padovano on LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-
-      <a href="https://www.researchgate.net/profile/Federica-Padovano-3" target="_blank" rel="noopener" aria-label="Federica Padovano on ResearchGate">
-        <i class="fab fa-researchgate"></i>
-      </a>
+      <a href="https://www.linkedin.com/in/federica-padovano-a2215222a/" rel="me noopener" aria-label="Federica Padovano on LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.researchgate.net/profile/Federica-Padovano-3" rel="me noopener" aria-label="Federica Padovano on ResearchGate"><i class="fab fa-researchgate"></i></a>
     </div>
-  </div>
+  </aside>
 
-  <!-- COLONNA DESTRA -->
-  <div class="right">
-    <h2><b>Welcome to my personal webpage :)</b></h2>
+  <main class="right">
+    <h2>Welcome to my personal webpage :)</h2>
 
     <p>
-      I am Federica Padovano, a PhD in Applied Mathematics at <a href="https://www.ljll.fr/">LJLL</a>, Sorbonne Université, Paris, under the supervision of <a href="https://www.ljll.fr/~almeida/">Prof. Luis Almeida</a>, <a href="https://univ-cotedazur.fr/m-michael-cerezo">Dr. Michael Cerezo</a> and <a href="https://chiaravilla.github.io/website/index.html">Dr. Chiara Villa</a>.
-      I work in the field of <b>Mathematical Biology</b>: my research focuses on <b>modelling cancer population dynamics</b> under different scenarios, such as chemotherapy, immunotherapy, and interaction with immune cells.
+      I am Federica Padovano, a PhD researcher in Applied Mathematics at <a href="https://www.ljll.fr/">LJLL</a>, Sorbonne Université, Paris, under the supervision of <a href="https://www.ljll.fr/~almeida/">Prof. Luis Almeida</a>, <a href="https://univ-cotedazur.fr/m-michael-cerezo">Dr. Michael Cerezo</a> and <a href="https://chiaravilla.github.io/website/index.html">Dr. Chiara Villa</a>.
+    </p>
+    <p>
+      I work in <b>Mathematical Biology</b>: my research focuses on <b>modelling cancer population dynamics</b> under different scenarios, such as chemotherapy, immunotherapy, and interaction with immune cells.
+      See my <a href="research.html">publications</a>, <a href="talks.html">talks and teaching</a>, or my <a href="FP_CV.pdf">CV</a>.
     </p>
 
-    <div class="row">
-      <div class="col-md-12">
-        <img src="cover.jpg" class="immagine img-fluid" alt="Paris">
-      </div>
-    </div>
-  </div>
+    <img draggable="false" src="cover.jpg" class="cover" alt="View of Paris" width="1600" height="777">
+  </main>
 
 </div>
+
+<footer>© Federica Padovano · Last updated November 2026</footer>
+
+<script>
+  // Build the email link only when clicked, so the address never appears with "@" in the page
+  document.querySelectorAll("a.mail").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = "mailto:" + a.dataset.user + "@" + a.dataset.domain;
+    });
+  });
+  // Discourage saving pictures (right-click menu disabled on images)
+  document.querySelectorAll("img").forEach(function (img) {
+    img.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+  });
+</script>
 
 </body>
 </html>
