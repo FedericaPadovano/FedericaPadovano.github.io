@@ -1,94 +1,95 @@
+/* ---------- Colours (change them here only) ---------- */
+:root {
+  --orange: #C74C0E;
+  --purple: #562183;
+  --lilac:  #B784E0;
+  --grey-bg: #f5f5f5;
+  --text: #222;
+  --muted: #666;
+  --link: #007acc;
+}
+
+* { box-sizing: border-box; }
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   margin: 0;
+  color: var(--text);
+  line-height: 1.6;
 }
 
-/* NAVBAR */
+a { color: var(--link); }
+a:hover { color: #005a99; }
+
+/* ---------- Navigation bar ---------- */
 nav {
-  padding: 20px;
+  padding: 18px;
   text-align: center;
-  background-color: #C74C0E;
+  background-color: var(--orange);
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #4D086E;
+  color: #fff;
   font-weight: bold;
   font-size: 20px;
 }
 
-/* LAYOUT PRINCIPALE */
+nav a:hover,
+nav a[aria-current="page"] {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* ---------- Two-column layout ---------- */
 .main {
   display: flex;
   min-height: 90vh;
-  font-size: 14px; 
-  flex-wrap: wrap;
+  font-size: 15px;
 }
 
-h1 {
-  font-family: "Georgia", serif;
-}
-
-h2 {
-  font-size: 36px; 
-  font-family: "Georgia", serif;
-}
-
-h3 { 
-  font-family: "Georgia", serif;
-}
-
-h5 {
-  font-size: 16px;
-}
-
-/* COLONNA SINISTRA (PICCOLA) */
 .left {
   width: 23%;
+  min-width: 220px;
   padding: 40px 20px;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: var(--grey-bg);
 }
 
-/* COLONNA DESTRA (GRANDE) */
 .right {
-  width: 77%;
-  padding: 20px;
-  /*display: flex;*/
-  /*flex-direction: column;*/
+  flex: 1;
+  padding: 20px 40px;
+  max-width: 900px;   /* keeps lines easy to read on wide screens */
 }
 
-/* FOTO TONDA */
+h1, h2, h3, .name { font-family: Georgia, serif; }
+
+.left h1, .name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.right h1 { font-size: 34px; color: var(--purple); margin: 10px 0; }
+.right h2 { font-size: 24px; color: var(--purple); margin-top: 30px; }
+.right h3 { font-size: 17px; font-family: inherit; text-decoration: underline; }
+
+/* Home page welcome title */
+.main > .right > h2:first-child { font-size: 32px; color: var(--text); margin-top: 10px; }
+
 .profile {
   width: 120px;
   height: 120px;
-  max-width: 100%;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-/* SOTTOTITOLO */
-.subtitle {
-  color: #666;
-}
+.subtitle { color: var(--muted); margin: 6px 0; }
 
-/* IMMAGINE GRANDE */
-/* IMMAGINE GRANDE FINALE 
-.cover {
-  margin-top: 30px;
-  width: 100%;
-  height: 300px;
-  background-image: url('cover.jpg');
-  background-size: cover;
-  background-position: center;
-}*/
-
-.email {
-  font-size: 12px;
-  word-break: break-all;
-}
+.email { font-size: 13px; word-break: break-all; }
 
 .social {
   margin-top: 15px;
@@ -97,65 +98,69 @@ h5 {
   gap: 20px;
 }
 
-.social a {
-  color: #007acc;
-  font-size: 36px;   /* prova 32px o 36px */
-  text-decoration: none;
+.social a { font-size: 36px; text-decoration: none; }
+
+.cover {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 4px;
 }
 
-.social a:hover {
-  color: #005a99;
+/* ---------- Lists ---------- */
+ul.plain, ul.dated {
+  list-style: none;
+  padding-left: 0;
 }
 
-ul {
-  list-style-type: disc; /* restores bullets */
+ul.plain li, ul.dated li { margin-bottom: 8px; }
+
+ul.plain li::before {
+  content: "– ";
+  color: var(--lilac);
+  font-weight: bold;
 }
 
+.date {
+  display: inline-block;
+  min-width: 70px;
+  color: var(--lilac);
+  font-weight: bold;
+}
+
+/* Numbered publications, numbers in lilac */
+ol.pubs { padding-left: 25px; }
+ol.pubs li { margin-bottom: 14px; }
+ol.pubs li::marker { color: var(--lilac); font-weight: bold; }
+.links { white-space: nowrap; }
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+/* ---------- Phones ---------- */
 @media (max-width: 768px) {
+  .main { flex-direction: column; font-size: 15px; }
 
-  .main {
-    flex-direction: column; /* stack instead of side-by-side */
-    font-size: 10px; 
-  }
+  .left, .right { width: 100%; padding: 20px; }
 
-  .left,
-  .right {
-    width: 100%; /* full width on mobile */
-    padding: 20px;
-  }
+  nav a { display: inline-block; margin: 6px 10px; font-size: 17px; }
 
-  nav a {
-    display: block;   /* menu becomes vertical */
-    margin: 10px 0;
-  }
+  .profile { width: 90px; height: 90px; }
 
-  .profile {
-    width: 80px;
-    height: 80px;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 17px;
-  }
-
-  h5 {
-    font-size: 12px;
-  }
-
-  .icon-document {
-  transition: all 0.0s ease;
-  }
-  
-  .icon-document:hover {
-    color: #FF7518;          /* pumpkin orange */
-    font-weight: bold;       /* thicker look if font supports it */
-  }
+  .left h1, .name { font-size: 22px; }
+  .right h1 { font-size: 26px; }
+  .right h2, .main > .right > h2:first-child { font-size: 21px; }
 }
+
+/* ---------- Discourage saving pictures ---------- */
+img {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;  /* no "Save image" on long-press (iPhone) */
+  user-select: none;
+}
+
