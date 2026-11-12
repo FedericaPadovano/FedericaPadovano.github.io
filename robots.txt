@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
 
-# Keep the profile photo out of Google Images
+# Keep all pictures out of Google Images
 User-agent: Googlebot-Image
-Disallow: /Federica-Padovano.JPG
+Disallow: /
 
 Sitemap: https://federicapadovano.github.io/sitemap.xml
+
